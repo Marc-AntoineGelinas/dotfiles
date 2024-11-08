@@ -1,0 +1,58 @@
+* {
+  font-size: 20px;
+  font-family: Iosevka Nerd Font Mono;
+}
+
+window#waybar {
+  background : rgba(0,0,0,0)
+}
+
+#pulseaudio,
+#memory,
+#cpu,
+#tray,
+#disk {
+  padding: 0 10px;
+  background: rgba(0,0,0,0);
+  color: black;
+}
+
+.modules-right {
+  background-image: linear-gradient(-45deg, #0D21A1 0%, #6CD4FF 50%, #6E44FF 99%);
+  border-radius: 10px;
+}
+
+.modules-left {
+  padding: 0px;
+}
+
+#clock {
+  background: #6247AA;
+  color: #000000;
+  border-radius: 10px;
+  padding: 0 10px;
+  background-image: linear-gradient(-45deg, #6E44FF 0%, #D496A7 50%, #F8F32B 99%);
+}
+
+#workspaces button {
+  padding: 0 2px;
+  background: rgba(0,0,0,0);
+}
+
+#workspaces {
+  background-image: linear-gradient(-45deg, #F8F32B 0%, #6E44FF 50%, #D496A7 99%);
+  border-radius: 10px;
+}
+
+#workspaces button.active {
+  color : white;
+}
+
+#workspaces button:hover {
+  box-shadow: inherit;
+  text-shadow: inherit;
+}
+#workspaces button:hover {
+  padding: 0 3px;
+}
+
