@@ -43,6 +43,7 @@ end
 
 alias pamcan=pacman
 alias cisco=~/scripts/launch_cisco.sh
+alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 
 #Tmuxifier stuff
 set -gx PATH "~/.tmuxifier/bin" $PATH
