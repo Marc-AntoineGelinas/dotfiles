@@ -44,7 +44,9 @@ end
 alias pamcan=pacman
 alias cisco=~/scripts/launch_cisco.sh
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
+alias spotifycli="python3 $HOME/scripts/SpotifyCLI/spotify_cli_actions.py"
 
+set -gx TERM xterm-256color
 #Tmuxifier stuff
 set -gx PATH "~/.tmuxifier/bin" $PATH
 eval (tmuxifier init - fish)
