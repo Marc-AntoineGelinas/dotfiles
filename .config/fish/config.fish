@@ -35,16 +35,17 @@ function fish_prompt
   set_color normal
 end
 
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-    set fish_greeting
+set fish_greeting
 
+if status is-interactive
+and not set -q TMUX
+    exec tmux
 end
 
 alias pamcan=pacman
-alias cisco=~/scripts/launch_cisco.sh
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 alias spotifycli="python3 $HOME/scripts/SpotifyCLI/spotify_cli_actions.py"
+alias resolveconvert="~/scripts/resolveconvert.sh"
 
 set -gx TERM xterm-256color
 #Tmuxifier stuff
