@@ -16,7 +16,7 @@ return {
         },
       },
     })
-    vim.keymap.set("n", "<C-n>", ":Neotree toggle<CR>", {})
-    vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<CR>", {})
+    vim.keymap.set("n", "<C-n>", ":Neotree toggle<CR>", {desc = "Neotree toggle"})
+    vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<CR>", {desc = "Reveal Netree buffer"})
   end,
 }

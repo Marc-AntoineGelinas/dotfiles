@@ -7,11 +7,11 @@ return {
       transparent_background = true,
     },
     integrations = {
-      cmp = true,
       gitsigns = true,
       treesitter = true,
       telescope = true,
       mason = true,
+      blink_cmp = true,
     },
     config = function(_, opts)
     require("catppuccin").setup(opts)
