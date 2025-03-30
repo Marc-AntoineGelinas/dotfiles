@@ -28,6 +28,14 @@ return {
         capabilities = capabilities
       })
       lspconfig.gopls.setup({
+        on_attach = function(bufnr)
+          vim.api.nvim_create_autocmd("BufWritePre", {
+            buffer = bufnr,
+            callback = function()
+              require('go.format').goimports()
+            end,
+          })
+        end,
         capabilities = capabilities,
         settings = {
           gofumpt = true,
