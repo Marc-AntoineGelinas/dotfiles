@@ -5,16 +5,12 @@ return{
       "neovim/nvim-lspconfig",
       "nvim-treesitter/nvim-treesitter",
     },
+    enabled = true,
     config = function()
       require("go").setup({
         go = "go",
-        lsp_cfg = true,
-        lsp_gofumpt = true,
-        goimports = "gopls",
-        lsp_inlay_hints = {
-          enable = false,
-          style = "inlay",
-        },
+        gofmt = "gofumpt",
+        goimports = "gopls"
       })
 
       local format_sync_grp = vim.api.nvim_create_augroup("GoFormat", {})
