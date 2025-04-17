@@ -22,7 +22,6 @@ vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "[C]ode [A]c
 vim.keymap.set("n", "K", function() vim.lsp.buf.hover({ border = 'single', max_height = 14, max_width = 100 }) end,
   { desc = "Hover" })
 
-
 -- Auto formating on save
 vim.api.nvim_create_autocmd('LspAttach', {
   group = vim.api.nvim_create_augroup('my.lsp', {}),
