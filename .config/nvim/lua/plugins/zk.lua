@@ -14,7 +14,7 @@ return {
 
     local opts = { noremap = true, silent = false }
 
-    vim.keymap.set("n", "<leader>zn", "<Cmd>ZkNew {title = vim.fn.input('Title: ') }<CR>", opts)
+    vim.keymap.set("n", "<leader>zn", "<Cmd>ZkNew<CR>", opts)
 
     -- Open notes.
     vim.keymap.set("n", "<leader>zo", "<Cmd>ZkNotes { sort = { 'modified' } }<CR>", opts)
