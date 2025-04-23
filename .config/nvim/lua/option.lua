@@ -5,6 +5,12 @@ vim.cmd 'set shiftwidth=2'
 
 vim.g.have_nerd_font = true
 
+-- UFO
+vim.o.foldcolumn = "1"
+vim.o.foldlevel = 99
+vim.o.foldlevelstart = 99
+vim.o.foldenable = true
+
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.o.statuscolumn = '%s %l %r'
