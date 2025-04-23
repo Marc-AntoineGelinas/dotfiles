@@ -32,6 +32,7 @@ return {
 
     -- Grep
     { "<leader>sb",       function() Snacks.picker.lines() end,           desc = "Buffer Lines" },
+    { "<leader>sk",       function() Snacks.picker.keymaps() end,         desc = "Keymaps" },
 
     -- Help
     { "<leader>sh",       function() Snacks.picker.help() end,            desc = "Help Pages" },
