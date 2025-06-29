@@ -46,15 +46,16 @@ end
 
 set fish_greeting
 
-if status is-interactive
-and not set -q TMUX
-    exec tmux
-end
-
 alias pamcan=pacman
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 alias spotifycli="python3 $HOME/scripts/SpotifyCLI/spotify_cli_actions.py"
 alias resolveconvert="~/scripts/resolveconvert.sh"
+
+if type -q tmux
+    if not test -n "$TMUX"
+        tmux attach-session -t default; or tmux new-session -s default
+    end
+end
 
 set -gx TERM xterm-256color
 #Tmuxifier stuff
