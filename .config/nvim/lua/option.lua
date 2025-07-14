@@ -1,12 +1,12 @@
 vim.cmd 'set expandtab'
-vim.cmd 'set tabstop=2'
-vim.cmd 'set softtabstop=2'
-vim.cmd 'set shiftwidth=2'
+vim.cmd 'set tabstop=4'
+vim.cmd 'set softtabstop=4'
+vim.cmd 'set shiftwidth=4'
 
 vim.g.have_nerd_font = true
 
 -- UFO
-vim.o.foldcolumn = "1"
+vim.o.foldcolumn = '1'
 vim.o.foldlevel = 99
 vim.o.foldlevelstart = 99
 vim.o.foldenable = true
