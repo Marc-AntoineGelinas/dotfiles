@@ -8,8 +8,8 @@ vim.diagnostic.config {
     severity = { min = vim.diagnostic.severity.ERROR },
   },
   virtual_text = {
-    current_line = true,
-    severity = { min = vim.diagnostic.severity.ERROR },
+    current_line = false,
+    severity = { min = vim.diagnostic.severity.WARN },
   },
   virtual_lines = false,
 }
