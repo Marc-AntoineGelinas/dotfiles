@@ -1,25 +1,27 @@
-vim.cmd 'set expandtab'
-vim.cmd 'set tabstop=8'
-vim.cmd 'set softtabstop=4'
-vim.cmd 'set shiftwidth=4'
+vim.cmd("set expandtab")
+vim.cmd("set tabstop=4")
+vim.cmd("set softtabstop=4")
+vim.cmd("set shiftwidth=4")
+vim.cmd("set autoindent")
+vim.cmd("set smartindent")
 
 vim.g.have_nerd_font = true
 
 -- UFO
-vim.o.foldcolumn = '1'
+vim.o.foldcolumn = "1"
 vim.o.foldlevel = 99
 vim.o.foldlevelstart = 99
 vim.o.foldenable = true
 
 vim.opt.number = true
 vim.opt.relativenumber = true
-vim.o.statuscolumn = '%s %l %r'
+vim.o.statuscolumn = "%s %l %r"
 
-vim.opt.mouse = 'a'
+vim.opt.mouse = "a"
 
 vim.opt.showmode = false
 
-vim.opt.clipboard = 'unnamedplus'
+vim.opt.clipboard = "unnamedplus"
 
 vim.opt.breakindent = true
 
@@ -30,7 +32,7 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 -- Keep signcolumn on by default
-vim.opt.signcolumn = 'yes'
+vim.opt.signcolumn = "yes"
 
 -- Decrease update time
 vim.opt.updatetime = 250
@@ -47,10 +49,10 @@ vim.opt.splitbelow = true
 --  See `:help 'list'`
 --  and `:help 'listchars'`
 vim.opt.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
 -- Preview substitutions live, as you type!
-vim.opt.inccommand = 'split'
+vim.opt.inccommand = "split"
 
 -- Show which line your cursor is on
 vim.opt.cursorline = true

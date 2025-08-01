@@ -1,43 +1,43 @@
 return {
-'saghen/blink.cmp',
-dependencies = { 'rafamadriz/friendly-snippets' },
+    "saghen/blink.cmp",
+    dependencies = { "rafamadriz/friendly-snippets" },
 
-version = '*',
+    version = "*",
 
----@module 'blink.cmp'
----@type blink.cmp.Config
-opts = {
-    keymap = { preset = 'default' },
+    ---@module 'blink.cmp'
+    ---@type blink.cmp.Config
+    opts = {
+        keymap = { preset = "default" },
 
-    appearance = {
-      nerd_font_variant = 'mono',
-    },
-
-    sources = {
-      default = { 'lsp', 'path', 'snippets', 'buffer' },
-    },
-
-    completion = {
-      documentation = {
-        window = {
-          border = 'single',
+        appearance = {
+            nerd_font_variant = "mono",
         },
-        auto_show = true,
-      },
-      menu = {
-        border = 'single',
-      },
-    },
 
-    signature = {
-      enabled = true ,
-      window = {
-        show_documentation = true,
-        border = 'single',
-      },
-    },
+        sources = {
+            default = { "lsp", "path", "snippets", "buffer" },
+        },
 
-    fuzzy = { implementation = "prefer_rust_with_warning" }
-  },
-  opts_extend = { "sources.default" }
+        completion = {
+            documentation = {
+                window = {
+                    border = "single",
+                },
+                auto_show = true,
+            },
+            menu = {
+                border = "single",
+            },
+        },
+
+        signature = {
+            enabled = true,
+            window = {
+                show_documentation = true,
+                border = "single",
+            },
+        },
+
+        fuzzy = { implementation = "prefer_rust_with_warning" },
+    },
+    opts_extend = { "sources.default" },
 }
