@@ -4,6 +4,7 @@ vim.cmd("set softtabstop=4")
 vim.cmd("set shiftwidth=4")
 vim.cmd("set autoindent")
 vim.cmd("set smartindent")
+vim.cmd("setlocal spell spelllang=en_us")
 
 vim.g.have_nerd_font = true
 
