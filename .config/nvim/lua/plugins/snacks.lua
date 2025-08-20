@@ -16,6 +16,9 @@ return {
         filter = {
             cwd = true,
         },
+        image = {
+            enabled = true,
+        },
     },
     keys = {
         -- Explorer
