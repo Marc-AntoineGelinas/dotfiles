@@ -38,7 +38,13 @@ return {
                 note:add_alias(note.title)
             end
 
-            local out = { id = note.id, path = note.path.filename, tags = note.tags, date = os.date("%Y-%m-%d") }
+            local out = {
+                id = note.id,
+                title = note.title,
+                path = note.path.filename,
+                tags = note.tags,
+                date = os.date("%Y-%m-%d"),
+            }
 
             if note.metadata ~= nil and not vim.tbl_isempty(note.metadata) then
                 for k, v in pairs(note.metadata) do
@@ -95,10 +101,10 @@ return {
         },
 
         ui = {
-            enable = true, -- set to false to disable all additional syntax features
+            enable = true,               -- set to false to disable all additional syntax features
             ignore_conceal_warn = false, -- set to true to disable conceallevel specific warning
-            update_debounce = 200, -- update delay after a text change (in milliseconds)
-            max_file_length = 5000, -- disable UI features for files with more than this many lines
+            update_debounce = 200,       -- update delay after a text change (in milliseconds)
+            max_file_length = 5000,      -- disable UI features for files with more than this many lines
             -- Use bullet marks for non-checkbox lists.
             bullets = { char = "•", hl_group = "ObsidianBullet" },
             external_link_icon = { char = "", hl_group = "ObsidianExtLinkIcon" },

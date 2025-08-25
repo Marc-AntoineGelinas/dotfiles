@@ -2,7 +2,10 @@ return {
     {
         "williamboman/mason.nvim",
         lazy = false,
-        dependencies = { "williamboman/mason-lspconfig", "neovim/nvim-lspconfig" },
+        dependencies = {
+            "williamboman/mason-lspconfig",
+            "neovim/nvim-lspconfig",
+        },
         config = function()
             require("mason").setup()
             require("mason-lspconfig").setup({
@@ -10,6 +13,7 @@ return {
                     "gopls",
                     "pyright",
                     "clangd",
+                    "harper_ls",
                 },
             })
         end,

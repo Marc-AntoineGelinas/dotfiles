@@ -5,10 +5,10 @@ vim.diagnostic.config({
         border = "rounded",
     },
     underline = {
-        severity = { min = vim.diagnostic.severity.ERROR },
+        severity = { min = vim.diagnostic.severity.HINT },
     },
     virtual_text = {
-        current_line = false,
+        current_line = true,
         severity = { min = vim.diagnostic.severity.WARN },
     },
     virtual_lines = false,
